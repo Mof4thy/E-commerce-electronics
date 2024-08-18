@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/all.css">
+    <meta charset="UTF-8">
+    <!--  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+    <!--  -->
+    
+    <link rel="stylesheet" href="CSS/Style.css">  
+    <title>Home page</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header_container">
+            <div class="header_content ">
+
+                <div class="header_logo">
+                    <a href="index.html" >MINIONS STORE</a>
+                </div>
+
+                <h4 id="user_header_info"></h4>
+
+                <nav>
+                    <ul id="header_links">
+                        <div class="headerbtn" style="display: flex; gap: 15px;">
+                            <li  class="login_btn"></li> <a href="login.html">log In </a> </li>
+                            <li  class="reg_btn"></li> <a href="Register.html"> Register</a></li>
+                        </div>
+                        <li  class="reg_btn"></li> <a href="Register.html"><i style="color: #0e3b50dd;" class="fa-solid fa-right-to-bracket"></i></a></li>
+
+                    </ul>
+                     <!-- ///////////////////////////////////////////////// -->
+                    <ul id="header_links_signedin">
+                        <li class="home_shopping_cart" style="display: flex;">
+                            <i class="fa-solid fa-cart-shopping shopping_cart_header_icon"></i>
+                            <span class="cart_items_count">0</span>
+                            <span class="cart_btn">cart</span>
+                            <i class="fa-solid fa-chevron-up cart_close_icon"></i>    
+                            <i class="fa-solid fa-chevron-down cart_open_icon"></i>                            
+                            <div class="cart_ptoducts">
+                                <div class="cart_item_drop_down">
+                                    <!-- added items to cart -->
+                                </div>
+                                <div class="all_items_btn_div">
+                                    <a class="viewAllItems" href="CartProducts.html"></a> 
+                                </div>  
+                            </div>
+
+                        </li>
+                        <div style="display: flex;">
+                            <li class="logout_btn"> <a href="login.html">Log out</a></li>
+                            <li class="logout_btn" id="logout_btn_icon"> <a href="login.html"><i style="color: #0e3b50dd;" class="fa-solid fa-door-open"></i></a></li>
+                        </div>
+
+                    </ul>
+                    <!-- ///////////////////////////////////////////////// -->
+                 </nav>
+
+            </div>
+        </div>
+    </header>
+
+
+    <section class="search">
+        <div class="search_container">
+            <div>
+                  <form class="row">
+                   
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 ">
+                        <div class="filter_bar">
+                            <select class="filter_by">
+                                <option value="name">Search By Name</option>
+                                <option value="category">Search By category</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 ">
+                        <div class="search_bar">
+                            <label for="search_item_name"><i class="fa-solid fa-magnifying-glass"></i></label>
+                            <input  type="text" placeholder="search..." id="search_item_name">
+                        </div>
+                    </div>
+                </form>  
+            </div>
+        </div>
+    </section>    
+    
+
+
+
+
+    <section>   
+        <div class="products_section">
+            <div class="products_container">
+                <div class="all_products row">
+                    
+                    <!-- products -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script  src="JS/Home.js"></script>
+</Body>
+</html>

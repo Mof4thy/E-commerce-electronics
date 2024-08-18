@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/forms.css">
+    <meta charset="UTF-8">
+    <!--  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+    <!--  -->    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css">
+
+    <title>Register page</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header_container">
+            <div class="header_content">
+
+                <div class="header_logo">
+                    <a href="index.html" >MINIONS STORE</a>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="form_section">
+        <div class="form_container">
+            <form>
+                <div class="user_name_row">
+                    <div class="fname">
+                        <label for="User_First_Name">First Name</label>
+                        <input type="text" id="User_First_Name">
+                    </div> 
+                    <div class="Lname">
+                        <label for="User_Last_Name">Last Name</label>
+                        <input type="text" id="User_Last_Name">
+                    </div>
+                </div>  
+                
+                <div class="emai_row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="password_row">
+                    <label for="password">password</label>
+                    <input type="password" id="password">
+                </div>
+
+                <div class="submit" style="display: flex; flex-direction: column; gap: 5px;">
+                    <input type="submit" value="Register" id="register_submit">
+                    <span> Already have account <a href="login.html"> log in</a></span>
+                </div>      
+
+            </form>
+        </div>
+    
+    </section>
+
+
+
+    <script  src="JS/register.js"></script>
+</Body>
+</html>

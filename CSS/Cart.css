@@ -1,0 +1,232 @@
+*{
+margin: 0;    
+padding: 0;
+box-sizing: border-box !important;
+}
+p{
+margin: 0 0 0 0;
+}
+*::selection{
+background-color:rgba(0, 0, 0, 0.059) ;
+}
+.cart_section{
+padding: 10px 0;
+border-bottom:1px solid rgb(171, 171, 171) ;
+}
+.cart_title_div{
+text-align: center;
+}
+.cart_title{
+text-align: center;
+color: #231F20;
+font-size: 30px;
+font-weight: 800;
+text-transform: uppercase;
+margin-bottom: 10px;
+cursor: pointer;
+display: inline-block; /* Makes the clickable area only as wide as the text */
+}
+.cart_container{
+width: 80%;
+margin: auto;
+}
+.All_cart_items {
+padding: 10px 0;
+margin-bottom: 20px;
+border-bottom: 1px dashed rgb(136, 136, 136) ;
+}
+.cart_item{
+background-color: rgb(255, 255, 255);
+display: flex;
+gap: 10px;
+justify-content: space-between;
+align-items: center;
+border-radius: 20px;
+padding:  5px;
+width: 100%;
+margin: 10px 0;
+transition: 0.5s;
+}
+.cart_item:hover{
+transform: scale(1.04);
+}
+
+.cart_item_img{
+width: 30%;
+background-color: #ffffff;
+}
+.cart_item_img img{
+width: 100%;
+height: 100%;
+border-radius: 10px;
+}
+
+.cart_item_details{
+flex: 1;
+background-color: #eaeaea;
+padding:5px 15px ;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.cart_item_details p {
+font-size: 20px;   
+font-weight: 800; 
+}
+.cart_item_details i {
+display: block;
+}
+.cart_item_controles{
+display: flex;
+align-items: center;
+gap: 20px;
+}
+.inc_dec{
+display: flex;
+gap: 15px;
+font-size: 25px;
+cursor: pointer;
+}
+.increment_item_in_cart{
+color: rgb(1, 114, 1);
+
+}
+.decrement_item_in_cart{
+color: maroon;
+
+}
+.cart_item_details p{
+font-size: 20px;
+}
+.remove_from_cart_btn{
+width: 50%;
+height: 40px;
+border:none ;
+border-radius: 20px;
+background-image: radial-gradient(rgb(190, 31, 31),#878686);
+color: rgb(255, 255, 255);
+font-size: 18px;
+font-family: 400;
+margin-left: auto;
+}
+.total_price_div{
+text-align: center;
+}
+#total_price{
+text-align: center;
+color: #0e3b50;
+font-size: 25px;
+font-weight: 800;
+text-transform: capitalize;
+margin-bottom: 10px;
+cursor: pointer;
+display: inline-block; /* Makes the clickable area only as wide as the text */
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.Fav_section{
+padding: 20px 0 50px 0;
+}
+.Fav_container{
+width: 70%;
+margin: auto;
+}
+.fav_title_div{
+text-align: center;
+display: none;  
+margin-bottom: 20px;
+}
+.fav_title{
+text-align: center;
+color: #231F20;
+font-size: 30px;
+font-weight: 800;
+text-transform: uppercase;
+cursor: pointer;
+display: inline-block; /* Makes the clickable area only as wide as the text */
+}
+.fav_title_underline{
+width: 40%;
+height: 3px;
+background-color:  #231f2072;
+margin: auto;
+border-radius: 20px;
+transition: 0.4s;
+}
+.fav_title:hover .fav_title_underline {
+width: 60%;
+}
+.All_Fav_items{
+padding: 10px 0;
+margin-bottom: 20px;
+margin: auto;
+display: flex;
+gap: 10px;
+overflow-x: auto;
+white-space: nowrap;
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+.All_Fav_items::-webkit-scrollbar {
+display: none;  /* Chrome, Safari, and Opera */
+}
+.fav_item{
+background-color: #d0d0d0;
+width: 100%;
+padding: 20px 30px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+border-radius: 20px;
+height: 420px;
+width: 330px;
+transition: 0.5s;
+
+}
+
+.fav_item:hover{
+transform: scale(1.04);
+}
+.fav_item_img{
+width: 100%;
+margin: auto;
+text-align: center;
+}
+.fav_item_img img{
+width: 100%;
+height: auto; 
+border-radius: 20px;
+}
+.fav_item_details{
+    flex: 1 ;
+display: flex;
+gap: 20px;
+justify-content: space-between;
+}
+.name_cat{
+flex: 1;
+flex-wrap: wrap;
+display: flex;
+flex-direction: column;
+gap: 0px;
+font-size: 20px;   
+font-weight: 800; 
+white-space: wrap;
+}
+.fav_item_name{
+flex: 1;
+}
+.fav_icon{
+align-self: flex-end;
+align-content: end;
+}
+.fav_icon i{
+display: block;
+font-size: 30px;
+color: rgb(255, 50, 50);
+cursor: pointer;
+}
+.fav_icon i:hover{
+
+color: rgb(255, 50, 50,0.8);
+}
