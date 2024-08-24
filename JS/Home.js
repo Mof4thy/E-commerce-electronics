@@ -133,7 +133,10 @@ let products = [
 let CartProducts = [];
 let FavProducts = [];
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded" , reloadpagestate)
+
+
+function reloadpagestate(){
 
     if(localStorage.getItem("CartProducts")){
         CartProducts= JSON.parse(localStorage.getItem("CartProducts"))
@@ -156,11 +159,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     
     }
-    // console.log("reload")
-    // console.log(CartProducts)
-})
 
-
+}
 
 
 ////////////////////////display products///////////////////////////////////
@@ -489,9 +489,21 @@ search_item_name.addEventListener("keyup", () => {
         else {
             return items.category.toLowerCase().includes(search_item_name.value.toLowerCase())
         }
+
     })
 
-displayProducts(FilteredProducts);
+    displayProducts(FilteredProducts);
+    updateDisplayedItems();
+});
 
+function updateDisplayedItems() {
+    CartProducts.forEach((cartitem) => {
+        updateViewProductItems(cartitem.id); 
+        updateCartItemCountDisplay(cartitem.id);  
+    });
 
-})
+    FavProducts.forEach((Favitem) => {
+        UpdateFavItemHTML(Favitem.id);
+    });
+
+}
